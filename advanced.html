@@ -17,7 +17,25 @@
     </nav>
     <section>
         <div>
-            <form action="https://www.google.com/advanced_search"></form>
+            <form action="https://www.google.com/search" method="GET">
+                <div>
+                    <label for="all-these-words">All these words:</label>
+                    <input type="text" id="all-these-words" name="as_q">
+                </div>
+                <div>
+                    <label for="this-exact-word-or-phrase:">this exact word or phrase:</label>
+                    <input type="text" value="" id="this-exact-word-or-phrase" name="as_epq">
+                </div>
+                <div>
+                    <label for="any-of-these-words">any of these words:</label>
+                    <input type="text" value="" id="any-of-these-words" name="as_oq">
+                </div>
+                <div>
+                    <label for="none-of-these-words">none of these words:</label>
+                    <input type="text" id="none-of-these-words" name="as_eq">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </section>
 </body>
