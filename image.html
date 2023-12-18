@@ -6,25 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Search</title>
     <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav>
-        <div>
-            <h1>Image Search</h1>
+        <div class="links">
             <a href="index.html">Home Page</a>
         </div>
     </nav>
 
-    <div>
-        <section>
+    <main class="mainSearch">
+        <div>
+            <img src="img/logo.png" alt="logo">
+        </div>
+
+        <div>
             <form action="https://www.google.com/search">
-                <input type="text" id="image-search" name="q">
+                <input class="search" type="text" id="image-search" name="q">
                 <input type="hidden" name="tbm" value="isch">
-                <input type="submit" value="Google Search">
+                <div>
+                    <input class="btn" type="submit" value="Google Search">
+                </div>
             </form>
-    </div>
-    </section>
+        </div>
+    </main>
 </body>
 
 </html>
